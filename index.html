@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SSP Food — Tirupati's favourite food discovery & delivery platform by Shiva Sai Perseverance. Order biryani, dosa, pizza and more from top restaurants near you.">
+  <meta name="keywords" content="SSP Food, Tirupati restaurants, food delivery, biryani, dosa, pizza, Andhra cuisine, SSP">
+  <meta name="author" content="SSP — Shiva Sai Perseverance">
+  <title>SSP Food — Tirupati's Best Food Delivery | Shiva Sai Perseverance</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container">
+
+      <!-- Logo -->
+      <a href="#" class="logo" id="logo">
+        <div class="logo-icon">SF</div>
+        <div class="logo-text">SSP<span>_Food</span></div>
+      </a>
+
+      <!-- Location Selector -->
+      <div class="location-selector" id="locationSelector">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span class="loc-text">Tirupati, AP</span>
+        <svg class="loc-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+
+      <!-- Search -->
+      <div class="search-bar" id="searchBar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search for restaurant, cuisine or a dish" id="searchInput">
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#offers-section" class="nav-link" id="navOffers">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+          Offers
+        </a>
+        <a href="#" class="nav-link" id="navHelp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Help
+        </a>
+        <a href="#" class="nav-link" id="navSignIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Sign In
+        </a>
+        <a href="#" class="nav-link" id="navCart">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Cart
+          <span class="badge">0</span>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Search for food, restaurant...">
+    </div>
+    <a href="#" class="mobile-nav-link">🏠 Home</a>
+    <a href="#offers-section" class="mobile-nav-link">🏷️ Offers</a>
+    <a href="#restaurants-section" class="mobile-nav-link">🍽️ Restaurants</a>
+    <a href="#" class="mobile-nav-link">❓ Help</a>
+    <a href="#" class="mobile-nav-link">👤 Sign In</a>
+    <a href="#" class="mobile-nav-link">🛒 Cart</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          By Shiva Sai Perseverance
+        </div>
+        <h1>
+          Hungry? <br>
+          <span class="gradient-text">Delicious Food</span><br>
+          Delivered Fast.
+        </h1>
+        <p class="hero-subtitle">
+          Discover the best restaurants and cuisines in Tirupati. From authentic Andhra Biryani to gourmet pizzas — SSP Food brings it all to your doorstep.
+        </p>
+        <div class="hero-actions">
+          <a href="#restaurants-section" class="btn-primary" id="heroOrderBtn">
+            Order Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://www.ssptechedu.com/" target="_blank" class="btn-secondary" id="heroSSPBtn">
+            Visit SSP Edu
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Restaurants</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">10k+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">30 min</div>
+            <div class="stat-label">Avg. Delivery</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="images/hero-banner.png" alt="SSP Food — Delicious Indian food spread" loading="eager">
+        </div>
+        <!-- Floating Cards -->
+        <div class="floating-card card-1">
+          <div class="fc-icon green">⭐</div>
+          <div class="fc-info">
+            <strong>4.8 Rated</strong>
+            <span>Best in Tirupati</span>
+          </div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="fc-icon orange">🚀</div>
+          <div class="fc-info">
+            <strong>25 min Delivery</strong>
+            <span>Lightning fast</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOD CATEGORIES ========== -->
+  <section class="categories-section" id="categories-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <h2 class="section-title">What's on your mind?</h2>
+          <p class="section-subtitle">Explore cuisines you love</p>
+        </div>
+        <div class="scroll-controls">
+          <button class="scroll-btn" id="catScrollLeft" aria-label="Scroll left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="scroll-btn" id="catScrollRight" aria-label="Scroll right">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="categories-scroll reveal" id="categoriesScroll">
+        <div class="category-item" data-category="Biryani">
+          <div class="category-image"><img src="images/biryani.png" alt="Biryani" loading="lazy"></div>
+          <div class="category-name">Biryani</div>
+        </div>
+        <div class="category-item" data-category="Pizza">
+          <div class="category-image"><img src="images/pizza.png" alt="Pizza" loading="lazy"></div>
+          <div class="category-name">Pizza</div>
+        </div>
+        <div class="category-item" data-category="Dosa">
+          <div class="category-image"><img src="images/dosa.png" alt="Dosa" loading="lazy"></div>
+          <div class="category-name">Dosa</div>
+        </div>
+        <div class="category-item" data-category="Chicken">
+          <div class="category-image"><img src="images/chicken.png" alt="Chicken" loading="lazy"></div>
+          <div class="category-name">Chicken</div>
+        </div>
+        <div class="category-item" data-category="Thali">
+          <div class="category-image"><img src="images/thali.png" alt="Veg Meal" loading="lazy"></div>
+          <div class="category-name">Veg Meal</div>
+        </div>
+        <div class="category-item" data-category="Fried Rice">
+          <div class="category-image"><img src="images/fried-rice.png" alt="Fried Rice" loading="lazy"></div>
+          <div class="category-name">Fried Rice</div>
+        </div>
+        <div class="category-item" data-category="Burger">
+          <div class="category-image"><img src="images/burger.png" alt="Burger" loading="lazy"></div>
+          <div class="category-name">Burger</div>
+        </div>
+        <div class="category-item" data-category="Biryani">
+          <div class="category-image"><img src="images/biryani.png" alt="Pulao" loading="lazy"></div>
+          <div class="category-name">Pulao</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPECIAL OFFERS ========== -->
+  <section class="offers-section" id="offers-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <h2 class="section-title">🔥 Today's Best Offers</h2>
+          <p class="section-subtitle">Exclusive deals just for you</p>
+        </div>
+        <div class="scroll-controls">
+          <button class="scroll-btn" id="offerScrollLeft" aria-label="Scroll left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="scroll-btn" id="offerScrollRight" aria-label="Scroll right">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="offers-scroll reveal" id="offersScroll">
+        <div class="offer-card gradient-1">
+          <div class="offer-discount">60% OFF</div>
+          <div class="offer-desc">Up to ₹120 on your first order</div>
+          <div class="offer-code">USE: SSPWELCOME</div>
+        </div>
+        <div class="offer-card gradient-2">
+          <div class="offer-discount">₹100 OFF</div>
+          <div class="offer-desc">On orders above ₹499</div>
+          <div class="offer-code">USE: SSP100</div>
+        </div>
+        <div class="offer-card gradient-3">
+          <div class="offer-discount">FREE DELIVERY</div>
+          <div class="offer-desc">Your first 3 orders — zero delivery fee</div>
+          <div class="offer-code">USE: FREEDEL</div>
+        </div>
+        <div class="offer-card gradient-4">
+          <div class="offer-discount">30% OFF</div>
+          <div class="offer-desc">On Biryani & South Indian meals all week</div>
+          <div class="offer-code">USE: SPICY30</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FILTER BAR ========== -->
+  <div class="filter-bar" id="filterBar">
+    <div class="container">
+      <div class="filter-pills" id="filterPills">
+        <button class="filter-pill active" data-filter="all" id="filterAll">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          All
+        </button>
+        <button class="filter-pill" data-filter="rating" id="filterRating">⭐ Rating 4.0+</button>
+        <button class="filter-pill" data-filter="veg" id="filterVeg">🟢 Pure Veg</button>
+        <button class="filter-pill" data-filter="fast" id="filterFast">⚡ Fast Delivery</button>
+        <button class="filter-pill" data-filter="offers" id="filterOffers">🏷️ Offers</button>
+        <button class="filter-pill" data-filter="biryani" id="filterBiryani">🍛 Biryani</button>
+        <button class="filter-pill" data-filter="southindian" id="filterSouth">🥘 South Indian</button>
+        <button class="filter-pill" data-filter="chinese" id="filterChinese">🥡 Chinese</button>
+        <button class="filter-pill" data-filter="pizza" id="filterPizza">🍕 Pizza</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== RESTAURANTS ========== -->
+  <section class="restaurants-section" id="restaurants-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <h2 class="section-title">Tirupati Restaurants</h2>
+          <p class="section-subtitle">Discover curated flavours from top-rated spots</p>
+        </div>
+      </div>
+
+      <div class="restaurant-grid" id="restaurantGrid">
+        <!-- Card 1 -->
+        <div class="restaurant-card reveal" data-tags="rating biryani southindian offers" id="rest-1">
+          <div class="card-image">
+            <img src="images/restaurant-1.png" alt="Hotel Bhimas — Grand South Indian Thali" loading="lazy">
+            <span class="promoted-badge">Promoted</span>
+            <span class="offer-badge">30% OFF</span>
+            <button class="fav-btn" aria-label="Add to favourites" id="fav-1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="restaurant-name">Hotel Bhimas</span>
+              <span class="rating-badge high">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.1
+              </span>
+            </div>
+            <div class="card-cuisines">South Indian, Chinese, North Indian</div>
+            <div class="card-bottom">
+              <span class="delivery-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                24 min
+              </span>
+              <span class="price-range">₹100 for one</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="restaurant-card reveal" data-tags="rating veg southindian offers" id="rest-2">
+          <div class="card-image">
+            <img src="images/restaurant-5.png" alt="PS4 Pure Veg Restaurant" loading="lazy">
+            <span class="offer-badge">30% OFF</span>
+            <button class="fav-btn" aria-label="Add to favourites" id="fav-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="restaurant-name">PS4 Pure Veg</span>
+              <span class="rating-badge high">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.3
+              </span>
+            </div>
+            <div class="card-cuisines">North Indian, South Indian, Thali</div>
+            <div class="card-bottom">
+              <span class="delivery-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                32 min
+              </span>
+              <span class="price-range">₹100 for one</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="restaurant-card reveal" data-tags="biryani chinese offers" id="rest-3">
+          <div class="card-image">
+            <img src="images/restaurant-2.png" alt="Spicy Paradise" loading="lazy">
+            <span class="promoted-badge">Promoted</span>
+            <span class="offer-badge">30% OFF</span>
+            <button class="fav-btn" aria-label="Add to favourites" id="fav-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="restaurant-name">Spicy Paradise</span>
+              <span class="rating-badge medium">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                3.9
+              </span>
+            </div>
+            <div class="card-cuisines">Biryani, Chinese, North Indian</div>
+            <div class="card-bottom">
+              <span class="delivery-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                28 min
+              </span>
+              <span class="price-range">₹200 for one</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="restaurant-card reveal" data-tags="rating fast pizza" id="rest-4">
+          <div class="card-image">
+            <img src="images/restaurant-3.png" alt="SSP Pizza Hub" loading="lazy">
+            <span class="offer-badge">50% OFF</span>
+            <button class="fav-btn" aria-label="Add to favourites" id="fav-4">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="restaurant-name">SSP Pizza Hub</span>
+              <span class="rating-badge high">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.5
+              </span>
+            </div>
+            <div class="card-cuisines">Pizza, Italian, Fast Food</div>
+            <div class="card-bottom">
+              <span class="delivery-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                18 min
+              </span>
+              <span class="price-range">₹150 for one</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="restaurant-card reveal" data-tags="chinese fast offers" id="rest-5">
+          <div class="card-image">
+            <img src="images/restaurant-4.png" alt="Dragon Wok Chinese" loading="lazy">
+            <span class="offer-badge">20% OFF</span>
+            <button class="fav-btn" aria-label="Add to favourites" id="fav-5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="restaurant-name">Dragon Wok</span>
+              <span class="rating-badge high">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.2
+              </span>
+            </div>
+            <div class="card-cuisines">Chinese, Noodles, Manchurian</div>
+            <div class="card-bottom">
+              <span class="delivery-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                22 min
+              </span>
+              <span class="price-range">₹180 for one</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="restaurant-card reveal" data-tags="rating veg southindian fast" id="rest-6">
+          <div class="card-image">
+            <img src="images/restaurant-6.png" alt="Andhra Spice Kitchen" loading="lazy">
+            <button class="fav-btn" aria-label="Add to favourites" id="fav-6">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="restaurant-name">Andhra Spice Kitchen</span>
+              <span class="rating-badge high">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.6
+              </span>
+            </div>
+            <div class="card-cuisines">Andhra, South Indian, Meals</div>
+            <div class="card-bottom">
+              <span class="delivery-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                15 min
+              </span>
+              <span class="price-range">₹120 for one</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="restaurant-card reveal" data-tags="biryani rating offers" id="rest-7">
+          <div class="card-image">
+            <img src="images/restaurant-1.png" alt="Royal Biryani House" loading="lazy">
+            <span class="promoted-badge">Promoted</span>
+            <span class="offer-badge">40% OFF</span>
+            <button class="fav-btn" aria-label="Add to favourites" id="fav-7">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="restaurant-name">Royal Biryani House</span>
+              <span class="rating-badge high">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.4
+              </span>
+            </div>
+            <div class="card-cuisines">Biryani, Mughlai, North Indian</div>
+            <div class="card-bottom">
+              <span class="delivery-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                30 min
+              </span>
+              <span class="price-range">₹250 for one</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="restaurant-card reveal" data-tags="fast veg" id="rest-8">
+          <div class="card-image">
+            <img src="images/restaurant-5.png" alt="Table 9 — South Indian" loading="lazy">
+            <button class="fav-btn" aria-label="Add to favourites" id="fav-8">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="restaurant-name">Table 9</span>
+              <span class="rating-badge high">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.0
+              </span>
+            </div>
+            <div class="card-cuisines">South Indian, Breakfast, Snacks</div>
+            <div class="card-bottom">
+              <span class="delivery-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                20 min
+              </span>
+              <span class="price-range">₹80 for one</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="restaurant-card reveal" data-tags="pizza fast offers" id="rest-9">
+          <div class="card-image">
+            <img src="images/restaurant-3.png" alt="Kwality Spicy Bites" loading="lazy">
+            <span class="offer-badge">BOGO</span>
+            <button class="fav-btn" aria-label="Add to favourites" id="fav-9">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="restaurant-name">Kwality Spicy Bites</span>
+              <span class="rating-badge high">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.1
+              </span>
+            </div>
+            <div class="card-cuisines">Fast Food, Pizza, Burgers</div>
+            <div class="card-bottom">
+              <span class="delivery-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                16 min
+              </span>
+              <span class="price-range">₹150 for one</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES / WHY CHOOSE ========== -->
+  <section class="features-section" id="features-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <h2 class="section-title">Why Choose SSP Food?</h2>
+          <p class="section-subtitle">Built with the same values as <a href="https://www.ssptechedu.com/" target="_blank" style="color:var(--ssp-primary)">SSP Institute</a></p>
+        </div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>Average delivery time of just 30 minutes. Your food arrives hot and fresh, every single time.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🛡️</div>
+          <h3>Hygiene Certified</h3>
+          <p>All partner restaurants are hygiene-audited and quality-controlled for your safety.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💰</div>
+          <h3>Best Prices</h3>
+          <p>Enjoy exclusive discounts, cashback offers, and loyalty rewards on every order.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎧</div>
+          <h3>24/7 Support</h3>
+          <p>Our dedicated support team is always ready to help you with any concerns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA / APP SECTION ========== -->
+  <section class="cta-section" id="cta-section">
+    <div class="container">
+      <div class="cta-wrapper reveal">
+        <div class="cta-content">
+          <h2>Get Exclusive Offers<br><span style="color:var(--ssp-primary)">Straight to Your Inbox</span></h2>
+          <p>Subscribe to the SSP Food newsletter and never miss a deal. Early access to flash sales, new restaurant launches, and seasonal specials — all curated from Tirupati's best.</p>
+          <div class="cta-input-group">
+            <input type="email" placeholder="Enter your email address" id="ctaEmail">
+            <button class="btn-primary" id="ctaSubscribe">Subscribe</button>
+          </div>
+          <div class="cta-trust">
+            <span class="cta-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              No Spam
+            </span>
+            <span class="cta-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              Unsubscribe Anytime
+            </span>
+            <span class="cta-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              Exclusive Deals
+            </span>
+          </div>
+        </div>
+        <div class="cta-image">
+          <div class="cta-phones">📱🍕</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">SF</div>
+            <div class="logo-text">SSP<span>_Food</span></div>
+          </a>
+          <p>A food discovery & delivery platform by <strong>Shiva Sai Perseverance</strong> — empowering Tirupati with the best dining experiences. Born from the same spirit as <a href="https://www.ssptechedu.com/" target="_blank" style="color:var(--ssp-primary)">SSP Institute</a>.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#categories-section">Cuisines</a></li>
+            <li><a href="#restaurants-section">Restaurants</a></li>
+            <li><a href="#offers-section">Offers</a></li>
+            <li><a href="#features-section">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- SSP Family -->
+        <div class="footer-col">
+          <h4>SSP Family</h4>
+          <ul>
+            <li><a href="https://www.ssptechedu.com/trainings" target="_blank">SSP Trainings</a></li>
+            <li><a href="https://www.ssptechedu.com/internship" target="_blank">SSP Internships</a></li>
+            <li><a href="https://www.ssptechedu.com/placements" target="_blank">SSP Placements</a></li>
+            <li><a href="https://www.ssptechedu.com/crash-courses" target="_blank">Crash Courses</a></li>
+            <li><a href="https://www.ssptechedu.com/" target="_blank">SSP Tech Edu</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li style="color:var(--text-secondary); font-size:14px; line-height:1.6; margin-bottom:12px;">
+              Annamaiah Circle, Beside DMART, Caratlane Building, AIR Bypass Road, Tirupati, AP
+            </li>
+            <li><a href="tel:+919035011859">📞 +91-9035011859</a></li>
+            <li><a href="mailto:persevcareers@gmail.com">✉️ persevcareers@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 SSP Food — A venture of <a href="https://www.ssptechedu.com/" target="_blank">Shiva Sai Perseverance</a>. All rights reserved.</span>
+        <span>
+          <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Refunds</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="app.js"></script>
+</body>
+</html>
